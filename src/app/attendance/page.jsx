@@ -189,21 +189,21 @@ const Attendance = () => {
         // ___________________________________________________
 
         // const phoneNumber = "+923419385624"; // Frasat Ali Gujjar
-        const phoneNumber = "+923066433202"; // CR
+        const phoneNumber = "+923186496416"; // CR
 
         const message = encodeURIComponent(
-            // `*Asslam-o-Alaikum Sir !*\n\n` +
-            // `*________________________*\n\n` +
-            // `*Name:*             Cr.Awais Butt\n` +
-            // `*Section:*          SE-6A\n` +
-            // `*Batch:*             2022\n` +
-            // `*Department:*  DCS\n\n` +
+            `*Asslam-o-Alaikum Sir !*\n\n` +
+            `*________________________*\n\n` +
+            `*Name:*             Cr.Ali Raza\n` +
+            `*Section:*          SE-A\n` +
+            `*Batch:*             2024\n` +
+            `*Department:*  DCS\n\n` +
             `*________________________*\n\n` +
             `*Date:* ${date}\n\n` +
-            // `*Time:* ${time}\n\n` +
-            // `*Total Students:* ${total_std}\n` +
-            // `*Present:* ${no_present_std}\n` +
-            // `*Absent:* ${no_absent_std}\n\n` +
+            `*Time:* ${time}\n\n` +
+            `*Total Students:* ${total_std}\n` +
+            `*Present:* ${no_present_std}\n` +
+            `*Absent:* ${no_absent_std}\n\n` +
             `*Course:*\n` +
             `${course}\n\n` +
             `*Absent Students:*\n` +
