@@ -1,0 +1,33 @@
+.OverLayer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ===================================================== */
+
+.OverLayer_hide {
+  margin-top: -400%;
+  transition: margin-top 0.5s ease;
+}
+
+.OverLayer_show {
+  transition: margin-top 0.5s ease;
+}
+
+/* ===================================================== */
+
+.model_hide {
+  margin-top: -100%;
+  transition: margin-top 0.5s ease;
+
+}
+
+.model_show {
+  transition: margin-top 0.5s ease;
+}
+
+/* ===================================================== */
