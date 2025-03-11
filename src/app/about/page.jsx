@@ -37,22 +37,10 @@ const About = () => {
                 {/* Developers Section */}
                 <div className="mt-8">
                     <h2 className="text-2xl font-semibold text-blue-800 text-center">Meet the Developers</h2>
-                    <div className="grid md:grid-cols-2 gap-6 mt-6">
+                    <div className="flex justify-center gap-6 mt-6">
                         <div onClick={sendToWhatsApp} className="p-4 bg-blue-100 rounded-lg shadow-md text-center">
                             <h3 className="text-lg font-semibold text-blue-900">Frasat Ali Gujjar</h3>
                             {/* <p className="text-gray-600">Lead Developer</p> */}
-                        </div>
-                        <div className="p-4 bg-blue-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-lg font-semibold text-blue-900">Esha Amir Magrey</h3>
-                            {/* <p className="text-gray-600">UI/UX Designer</p> */}
-                        </div>
-                        <div className="p-4 bg-blue-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-lg font-semibold text-blue-900">Javeria Sohail Magrey</h3>
-                            {/* <p className="text-gray-600">Backend Developer</p> */}
-                        </div>
-                        <div className="p-4 bg-blue-100 rounded-lg shadow-md text-center">
-                            <h3 className="text-lg font-semibold text-blue-900">Amna Ishaq</h3>
-                            {/* <p className="text-gray-600">Database Manager</p> */}
                         </div>
                     </div>
                 </div>
