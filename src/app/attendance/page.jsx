@@ -5,7 +5,8 @@ import Style from "./add_student.module.css";
 import Sidebar from '../modules/sidebar/sidebar.jsx';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import { data } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const Attendance = () => {
 
@@ -26,6 +27,7 @@ const Attendance = () => {
     const [SelectedCourse, setSelectedCourse] = useState("");
 
     // __________________________________________________________________
+
 
 
 
@@ -146,8 +148,10 @@ const Attendance = () => {
 
 
 
-    // ===================================== [ Calculate Full Attendance ] =================================================
 
+
+
+    // ===================================== [ Calculate Full Attendance ] =================================================
 
     const Calculate = async () => {
 
@@ -213,14 +217,16 @@ const Attendance = () => {
         );
 
         const url = `https://wa.me/${phoneNumber}?text=${message}`;
+        
         window.open(url, "_blank");
 
         // ___________________________________________________
 
     }
 
-
     // ===================================== [ Calculate Full Attendance ] =================================================
+
+
 
 
 
@@ -416,11 +422,12 @@ const Attendance = () => {
 
 
                     {/* Submission Button */}
-                    <div className="button-box">
+                    <div className="button-box block">
                         <button
                             onClick={Calculate}
-                            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                            className="mt-4 px-4 w-[200px] text-center py-2 bg-blue-500 text-white rounded hover:bg-blue-600 flex items-center justify-center gap-2"
                         >
+                            <FontAwesomeIcon icon={faPaperPlane} />
                             Submit Record
                         </button>
                     </div>
