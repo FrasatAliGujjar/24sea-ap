@@ -193,12 +193,12 @@ const Attendance = () => {
         // ___________________________________________________
 
         // const phoneNumber = "+923419385624"; // Frasat Ali Gujjar
-        const phoneNumber = "+923186496416"; // CR
+        const phoneNumber = "+923002552128"; // CR
 
         const message = encodeURIComponent(
             `*Asslam-o-Alaikum Sir !*\n\n` +
             `*________________________*\n\n` +
-            `*Name:*             Cr.Ali Raza\n` +
+            `*Name:*             Cr.Ahmad Ammar\n` +
             `*Section:*          SE-A\n` +
             `*Batch:*             2024\n` +
             `*Department:*  DCS\n\n` +

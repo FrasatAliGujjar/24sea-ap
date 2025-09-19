@@ -10,6 +10,7 @@ import "./globals.css";
 import Navbar from "./modules/navbar/navbar.jsx";
 import Footer from "./modules/footer/footer.jsx";
 import { usePathname } from "next/navigation";
+import GlobalPasswordProtection from "../components/GlobalPasswordProtection.jsx";
 
 // =======================================================================
 
@@ -53,13 +54,15 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          {/* ================================================= */}
-          {shouldShowNavBar && <Navbar />}
-          {/* ================================================= */}
-          {children}
-          {/* ================================================= */}
-          {shouldShowNavBar && <Footer />}
-          {/* ================================================= */}
+          <GlobalPasswordProtection>
+            {/* ================================================= */}
+            {shouldShowNavBar && <Navbar />}
+            {/* ================================================= */}
+            {children}
+            {/* ================================================= */}
+            {shouldShowNavBar && <Footer />}
+            {/* ================================================= */}
+          </GlobalPasswordProtection>
         </body>
       </html>
     </>
